@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+
+@keyframes planet_rotating {
+  from {
+    rotate: 0;
+  }
+
+  to {
+    rotate: 360deg;
+  }
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #180019;
+  font-family: 'Oswald', sans-serif;
+  color: #180019;
+}
+
+@media screen and (min-width:730px) {
+  body::-webkit-scrollbar {
+    width: 0.5vw;
+  }
+
+  body::-webkit-scrollbar-track {
+    background-color: #180019;
+    width: 0.5vw;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: white;
+  }
+
+  .section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .section-download .texts,
+  .section-about .texts {
+    width: 80%;
+  }
+
+  .section-cover .texts h1 {
+    color: #ff7508;
+    font-size: 65px;
+  }
+
+  .section-cover .texts p.desc {
+    color: #7fe41a;
+    margin-bottom: 25px;
+  }
+
+  .section-cover img {
+    width: 350px;
+    border-radius: 100%;
+    border: 1px solid #180019;
+    box-shadow: 0px 0px 500px #ff7508;
+    animation: planet_rotating 120s infinite;
+  }
+
+  .download {
+    padding: 5px;
+    color: #180019;
+    border: 1.5px solid #ff7508;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #ff7508;
+  }
+
+  .download:hover {
+    padding: 5px;
+    color: #ff7508;
+    border: 1.5px solid #ff7508;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: transparent;
+  }
+
+  .section-about {
+    background-color: #ff7508;
+  }
+
+  .section-download {
+    background-color: #7fe41a;
+  }
+
+  .buttons {
+    margin-top: 20px;
+  }
+
+  .download-64,
+  .download-32 {
+    padding: 5px;
+    color: #180019;
+    border: 1.5px solid #180019;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .download-64:hover,
+  .download-32:hover {
+    padding: 5px;
+    color: #7fe41a;
+    background-color: #180019;
+    border: 1.5px solid #180019;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  footer {
+    background-color: #180019;
+    text-align: center;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer .texts p {
+    color: #ff7508;
+  }
+
+  footer .texts h1 {
+    color: #ff7508;
+  }
+
+  footer .texts {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width:730px) {
+  .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .section-about .texts,
+  .section-download .texts {
+    width: 95%;
+  }
+
+  .section-cover .texts h1 {
+    color: #ff7508;
+    font-size: 85px;
+  }
+
+  .section-cover .texts p.desc {
+    color: #7fe41a;
+    margin-bottom: 25px;
+    font-size: 20px;
+  }
+
+  .section-cover img {
+    width: 300px;
+    border-radius: 100%;
+    border: 1px solid #180019;
+    box-shadow: 0px 0px 500px #ff7508;
+    animation: planet_rotating 120s infinite;
+  }
+
+  .download {
+    padding: 5px;
+    color: #180019;
+    border: 1.5px solid #ff7508;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #ff7508;
+  }
+
+  .download:hover {
+    padding: 5px;
+    color: #ff7508;
+    border: 1.5px solid #ff7508;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: transparent;
+  }
+
+  .section-about {
+    background-color: #ff7508;
+  }
+
+  .section-download {
+    background-color: #7fe41a;
+  }
+
+  .buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .download-64,
+  .download-32 {
+    padding: 5px;
+    color: #180019;
+    border: 1.5px solid #180019;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .download-64:hover,
+  .download-32:hover {
+    padding: 5px;
+    color: #7fe41a;
+    background-color: #180019;
+    border: 1.5px solid #180019;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  footer {
+    background-color: #180019;
+    text-align: center;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer .texts p {
+    color: #ff7508;
+  }
+
+  footer .texts h1 {
+    color: #ff7508;
+  }
+
+  footer .texts {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
